@@ -16,6 +16,8 @@ if not logger.handlers:
     logger.addHandler(handler)
 
 @functions_framework.http
+def travel_booking(request):
+    """
     HTTP Cloud Run Function for processing travel bookings.
     Expects a JSON payload:
     {
